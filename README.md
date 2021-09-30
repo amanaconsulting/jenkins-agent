@@ -11,5 +11,5 @@ JDK version depends on the image and the platform, see the _Configurations_ sect
 The image has several supported configurations, which can be accessed via the following tags:
 
 * Linux Images:
-  * `latest-jdk11` : Latest version with the newest remoting and Java 11 (based on `debian:bullseye-${builddate}`)
-  * `latest-jdk8` : Latest version with the newest remoting (based on `debian:bullseye-${builddate}`)
+  * `jdk11` : Latest version with the newest remoting and Java 11 (based on `debian:bullseye-${builddate}`)
+  * `latest` (`jdk8`) : Latest version with the newest remoting and Java 8 (based on `debian:bullseye-${builddate}`)
