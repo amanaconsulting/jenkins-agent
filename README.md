@@ -12,4 +12,4 @@ The image has several supported configurations, which can be accessed via the fo
 
 * Linux Images:
   * `jdk11` : Latest version with the newest remoting and Java 11 (based on `debian:bullseye-${builddate}`)
-  * `latest` (`jdk8`) : Latest version with the newest remoting and Java 8 (based on `debian:bullseye-${builddate}`)
+  * `jdk8` : Latest version with the newest remoting and Java 8 (based on `debian:bullseye-${builddate}`)
