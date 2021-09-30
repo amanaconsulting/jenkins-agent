@@ -1,4 +1,4 @@
-FROM jenkins/agent:latest
+FROM jenkins/agent:latest-jdk8
 LABEL maintainer = "dennis.jansen@amana.de"
 ARG DEBIAN_FRONTEND="noninteractive"
 ARG DEBCONF_NOWARNINGS="yes"
