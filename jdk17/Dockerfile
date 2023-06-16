@@ -9,7 +9,7 @@ ARG uid=1000
 ARG gid=1000
 
 USER root
-RUN apt-get -yqq update && apt-get -yqq install --no-install-recommends curl apt-utils zip && rm -rf /var/lib/apt/lists/*
+RUN apt-get -yqq update && apt-get -yqq install --no-install-recommends curl apt-utils zip unzip && rm -rf /var/lib/apt/lists/*
 
 # Install Docker Client
 # so war es bisher: RUN curl -sSL https://get.docker.com/ | sh
