@@ -11,6 +11,9 @@ ARG gid=1000
 USER root
 RUN apt-get -yqq update && apt-get -yqq install --no-install-recommends curl apt-utils zip unzip && rm -rf /var/lib/apt/lists/*
 
+# Install Octopus Deploy CLI
+RUN apt update && sudo apt install --no-install-recommends gnupg curl ca-certificates apt-transport-https && curl -sSfL https://apt.octopus.com/public.key | sudo apt-key add - &&  sh -c "echo deb https://apt.octopus.com/ stable main > /etc/apt/sources.list.d/octopus.com.list" && apt update && sudo apt install octopuscli
+
 # Install Docker Client
 # so war es bisher: RUN curl -sSL https://get.docker.com/ | sh
 RUN curl --silent -fsSL https://get.docker.com/ -o get-docker.sh
